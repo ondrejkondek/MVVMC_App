@@ -28,10 +28,6 @@ protocol Coordinator {
 //        }
 //    }
 
-//    func removeAllChildCoordinatorsWith<T>(type _: T.Type)
-//        childCoordinators = childCoordinators.filter { $0 is T == false }
-//    }
-
 //    func removeAllChildCoordinators()
 //        childCoordinators.removeAll()
 //    }

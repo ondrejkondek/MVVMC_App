@@ -19,6 +19,8 @@ class AppCoordinator: Coordinator {
         return initialViewController as! UITabBarController
     }()
 
+    var childCoordinators: [Coordinator] = []
+
     // MARK: - Coordinator
 
     init(window: UIWindow?) {
@@ -32,7 +34,14 @@ class AppCoordinator: Coordinator {
 
         window.rootViewController = rootTabBarController
         window.makeKeyAndVisible()
+        // tabbarcordinator
     }
 
     func finish() {}
+}
+
+extension AppCoordinator {
+    func addChildCoordinator(_ coordinator: Coordinator) {
+        childCoordinators.append(coordinator)
+    }
 }

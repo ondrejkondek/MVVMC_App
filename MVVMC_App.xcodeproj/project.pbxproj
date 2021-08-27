@@ -14,7 +14,7 @@
 		F314161326D7968700321EFE /* MVVMC_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F314161126D7968700321EFE /* MVVMC_App.xcdatamodeld */; };
 		F314161526D7968900321EFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F314161426D7968900321EFE /* Assets.xcassets */; };
 		F314161826D7968900321EFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F314161626D7968900321EFE /* LaunchScreen.storyboard */; };
-		F314162026D79A3F00321EFE /* Coordinater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314161F26D79A3F00321EFE /* Coordinater.swift */; };
+		F314162026D79A3F00321EFE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314161F26D79A3F00321EFE /* Coordinator.swift */; };
 		F314162226D79AF900321EFE /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314162126D79AF900321EFE /* AppCoordinator.swift */; };
 		F314162526D79D9A00321EFE /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314162426D79D9A00321EFE /* ViewController2.swift */; };
 		F3E270C426D8CFB700D81C7E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E270C326D8CFB700D81C7E /* TableViewController.swift */; };
@@ -31,7 +31,7 @@
 		F314161426D7968900321EFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F314161726D7968900321EFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F314161926D7968900321EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F314161F26D79A3F00321EFE /* Coordinater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinater.swift; sourceTree = "<group>"; };
+		F314161F26D79A3F00321EFE /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F314162126D79AF900321EFE /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F314162426D79D9A00321EFE /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		F3E270C326D8CFB700D81C7E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		F314160726D7968600321EFE /* MVVMC_App */ = {
 			isa = PBXGroup;
 			children = (
-				F314161F26D79A3F00321EFE /* Coordinater.swift */,
+				F314161F26D79A3F00321EFE /* Coordinator.swift */,
 				F3E270C226D8C9D400D81C7E /* Delegates */,
 				F314162326D79B0100321EFE /* Coordinators */,
 				F3E270C526D8D0D000D81C7E /* Model */,
@@ -216,7 +216,7 @@
 				F314160926D7968600321EFE /* AppDelegate.swift in Sources */,
 				F314160B26D7968600321EFE /* SceneDelegate.swift in Sources */,
 				F314161326D7968700321EFE /* MVVMC_App.xcdatamodeld in Sources */,
-				F314162026D79A3F00321EFE /* Coordinater.swift in Sources */,
+				F314162026D79A3F00321EFE /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

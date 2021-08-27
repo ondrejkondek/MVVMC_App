@@ -18,7 +18,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-//        coordinator = TableVCCoordinator(navControll: navigationController!)
         myView.backgroundColor = .red
 
         if #available(iOS 14.0, *) {
