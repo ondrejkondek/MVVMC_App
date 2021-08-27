@@ -17,6 +17,8 @@
 		F314162026D79A3F00321EFE /* Coordinater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314161F26D79A3F00321EFE /* Coordinater.swift */; };
 		F314162226D79AF900321EFE /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314162126D79AF900321EFE /* AppCoordinator.swift */; };
 		F314162526D79D9A00321EFE /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314162426D79D9A00321EFE /* ViewController2.swift */; };
+		F3E270C426D8CFB700D81C7E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E270C326D8CFB700D81C7E /* TableViewController.swift */; };
+		F3E270C726D8D2B800D81C7E /* TableVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E270C626D8D2B800D81C7E /* TableVCCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		F314161F26D79A3F00321EFE /* Coordinater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinater.swift; sourceTree = "<group>"; };
 		F314162126D79AF900321EFE /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F314162426D79D9A00321EFE /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		F3E270C326D8CFB700D81C7E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		F3E270C626D8D2B800D81C7E /* TableVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVCCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +68,15 @@
 		F314160726D7968600321EFE /* MVVMC_App */ = {
 			isa = PBXGroup;
 			children = (
-				F314160826D7968600321EFE /* AppDelegate.swift */,
-				F314160A26D7968600321EFE /* SceneDelegate.swift */,
+				F314161F26D79A3F00321EFE /* Coordinater.swift */,
+				F3E270C226D8C9D400D81C7E /* Delegates */,
 				F314162326D79B0100321EFE /* Coordinators */,
+				F3E270C526D8D0D000D81C7E /* Model */,
 				F314160C26D7968600321EFE /* ViewController.swift */,
 				F314162426D79D9A00321EFE /* ViewController2.swift */,
-				F314160E26D7968600321EFE /* Main.storyboard */,
+				F3E270C326D8CFB700D81C7E /* TableViewController.swift */,
+				F3E270C826D8DFD000D81C7E /* Storyboards */,
 				F314161426D7968900321EFE /* Assets.xcassets */,
-				F314161626D7968900321EFE /* LaunchScreen.storyboard */,
 				F314161926D7968900321EFE /* Info.plist */,
 				F314161126D7968700321EFE /* MVVMC_App.xcdatamodeld */,
 			);
@@ -82,9 +87,34 @@
 			isa = PBXGroup;
 			children = (
 				F314162126D79AF900321EFE /* AppCoordinator.swift */,
-				F314161F26D79A3F00321EFE /* Coordinater.swift */,
+				F3E270C626D8D2B800D81C7E /* TableVCCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		F3E270C226D8C9D400D81C7E /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				F314160826D7968600321EFE /* AppDelegate.swift */,
+				F314160A26D7968600321EFE /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		F3E270C526D8D0D000D81C7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F3E270C826D8DFD000D81C7E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F314160E26D7968600321EFE /* Main.storyboard */,
+				F314161626D7968900321EFE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +127,7 @@
 				F314160126D7968600321EFE /* Sources */,
 				F314160226D7968600321EFE /* Frameworks */,
 				F314160326D7968600321EFE /* Resources */,
+				F314162726D7A82700321EFE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -152,6 +183,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F314162726D7A82700321EFE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftformat >/dev/null; then\nswiftformat .\nelse\necho \"error: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nexit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F314160126D7968600321EFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -160,6 +211,8 @@
 				F314162526D79D9A00321EFE /* ViewController2.swift in Sources */,
 				F314162226D79AF900321EFE /* AppCoordinator.swift in Sources */,
 				F314160D26D7968600321EFE /* ViewController.swift in Sources */,
+				F3E270C426D8CFB700D81C7E /* TableViewController.swift in Sources */,
+				F3E270C726D8D2B800D81C7E /* TableVCCoordinator.swift in Sources */,
 				F314160926D7968600321EFE /* AppDelegate.swift in Sources */,
 				F314160B26D7968600321EFE /* SceneDelegate.swift in Sources */,
 				F314161326D7968700321EFE /* MVVMC_App.xcdatamodeld in Sources */,

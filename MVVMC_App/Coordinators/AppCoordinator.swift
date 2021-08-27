@@ -8,39 +8,31 @@
 import UIKit
 
 class AppCoordinator: Coordinator {
-    
     // MARK: - Properties
+
     let window: UIWindow?
-    
-    lazy var rootViewController: UIViewController = {
+    var rootNavigationController: UINavigationController?
+    var rootViewController: UIViewController?
+    lazy var rootTabBarController: UITabBarController = {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let initialViewController = storyboard.instantiateViewController(withIdentifier: "TabBar")
-        return initialViewController
+        return initialViewController as! UITabBarController
     }()
 
-//    let apiClient: ApiClient = {
-//        let configuration = URLSessionConfiguration.default
-//        configuration.httpAdditionalHeaders = ["Content-Type": "application/json; charset=utf-8"]
-//        let apiClient = ApiClient(configuration: configuration)
-//        return apiClient
-//    }()
-
     // MARK: - Coordinator
+
     init(window: UIWindow?) {
         self.window = window
     }
 
-    override func start() {
+    func start() {
         guard let window = window else {
             return
         }
 
-        window.rootViewController = rootViewController
+        window.rootViewController = rootTabBarController
         window.makeKeyAndVisible()
     }
 
-    override func finish() {
-
-    }
-
+    func finish() {}
 }
