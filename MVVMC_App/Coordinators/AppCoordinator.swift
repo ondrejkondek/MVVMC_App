@@ -13,11 +13,7 @@ class AppCoordinator: Coordinator {
     let window: UIWindow?
     var rootNavigationController: UINavigationController?
     var rootViewController: UIViewController?
-    lazy var rootTabBarController: UITabBarController = {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "TabBar")
-        return initialViewController as! UITabBarController
-    }()
+    var rootTabBarController = TabBarController()
 
     var childCoordinators: [Coordinator] = []
 
@@ -34,7 +30,6 @@ class AppCoordinator: Coordinator {
 
         window.rootViewController = rootTabBarController
         window.makeKeyAndVisible()
-        // tabbarcordinator
     }
 
     func finish() {}

@@ -13,6 +13,11 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let navController = UINavigationController(rootViewController: self)
+        navController.tabBarItem.title = "title"
+        navController.navigationBar.prefersLargeTitles = true
+        navigationItem.title = "title"
+
         coordinator = TableVCCoordinator(navControll: navigationController!)
         title = "Table Example"
     }
