@@ -46,49 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ABc-19-3HC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9" y="-529"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="1Q8-PD-6Pa">
-            <objects>
-                <tableViewController id="REW-qm-qHJ" customClass="TableViewController" customModule="MVVMC_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="m20-ca-fvE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="H96-9e-HLC">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H96-9e-HLC" id="toH-h4-orE">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ys3-AY-BS2">
-                                            <rect key="frame" x="186" y="11.5" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="Ys3-AY-BS2" firstAttribute="centerY" secondItem="toH-h4-orE" secondAttribute="centerY" id="7nH-Ee-M8w"/>
-                                        <constraint firstItem="Ys3-AY-BS2" firstAttribute="centerX" secondItem="toH-h4-orE" secondAttribute="centerX" id="aV3-AK-ccu"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="REW-qm-qHJ" id="cqF-KX-Sx6"/>
-                            <outlet property="delegate" destination="REW-qm-qHJ" id="Xkz-U4-I88"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="OqU-zh-eO9"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PoJ-jN-ToV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-914" y="-529"/>
+            <point key="canvasLocation" x="-1351" y="-536"/>
         </scene>
     </scenes>
     <resources>

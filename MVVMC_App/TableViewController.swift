@@ -13,13 +13,8 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let navController = UINavigationController(rootViewController: self)
-        navController.tabBarItem.title = "title"
-        navController.navigationBar.prefersLargeTitles = true
-        navigationItem.title = "title"
-
-        coordinator = TableVCCoordinator(navControll: navigationController!)
         title = "Table Example"
+        setupTapBar()
     }
 
     // MARK: - Table view data source
@@ -40,6 +35,23 @@ class TableViewController: UITableViewController {
     }
 
     override func tableView(_: UITableView, didSelectRowAt _: IndexPath) {
-        coordinator?.start()
+        coordinator?.addView()
+    }
+}
+
+extension TableViewController {
+    func setupTapBar() {
+        tabBarController?.tabBar.items?[0].title = "Table"
+        if #available(iOS 13.0, *) {
+            tabBarController?.tabBar.items?[0].image = UIImage(systemName: "book")
+        } else {
+            // Fallback on earlier versions
+        }
+        tabBarController?.tabBar.items?[1].title = "VC 2"
+        if #available(iOS 13.0, *) {
+            tabBarController?.tabBar.items?[1].image = UIImage(systemName: "play")
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }

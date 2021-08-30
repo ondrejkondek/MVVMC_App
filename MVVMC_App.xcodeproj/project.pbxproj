@@ -17,6 +17,16 @@
 		F314162026D79A3F00321EFE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314161F26D79A3F00321EFE /* Coordinator.swift */; };
 		F314162226D79AF900321EFE /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314162126D79AF900321EFE /* AppCoordinator.swift */; };
 		F314162526D79D9A00321EFE /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314162426D79D9A00321EFE /* ViewController2.swift */; };
+		F33C6E5826DCB5340083DB2D /* table.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33C6E5726DCB5340083DB2D /* table.storyboard */; };
+		F33C6E5A26DCB5600083DB2D /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C6E5926DCB5600083DB2D /* Status.swift */; };
+		F33C6E5C26DCB5AF0083DB2D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C6E5B26DCB5AF0083DB2D /* Person.swift */; };
+		F33C6E5E26DCC7DF0083DB2D /* AnotherCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C6E5D26DCC7DF0083DB2D /* AnotherCoordinator.swift */; };
+		F33C6E6026DCDA2B0083DB2D /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C6E5F26DCDA2B0083DB2D /* FinalViewController.swift */; };
+		F33C6E6226DCDA3A0083DB2D /* finalVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33C6E6126DCDA3A0083DB2D /* finalVC.storyboard */; };
+		F33C6E6426DCDA640083DB2D /* FinalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C6E6326DCDA640083DB2D /* FinalCoordinator.swift */; };
+		F33C6E6626DCE1840083DB2D /* MiddleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C6E6526DCE1840083DB2D /* MiddleViewController.swift */; };
+		F33C6E6826DCE19A0083DB2D /* middle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33C6E6726DCE19A0083DB2D /* middle.storyboard */; };
+		F33C6E6A26DCE1C10083DB2D /* MiddleVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C6E6926DCE1C10083DB2D /* MiddleVCCoordinator.swift */; };
 		F33F8C2B26DB9AE600C09D3D /* vc2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33F8C2A26DB9AE600C09D3D /* vc2.storyboard */; };
 		F3B0915B26D924C30020C7D0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0915A26D924C30020C7D0 /* TabBarController.swift */; };
 		F3E270C426D8CFB700D81C7E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E270C326D8CFB700D81C7E /* TableViewController.swift */; };
@@ -36,6 +46,16 @@
 		F314161F26D79A3F00321EFE /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F314162126D79AF900321EFE /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F314162426D79D9A00321EFE /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		F33C6E5726DCB5340083DB2D /* table.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = table.storyboard; sourceTree = "<group>"; };
+		F33C6E5926DCB5600083DB2D /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		F33C6E5B26DCB5AF0083DB2D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F33C6E5D26DCC7DF0083DB2D /* AnotherCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherCoordinator.swift; sourceTree = "<group>"; };
+		F33C6E5F26DCDA2B0083DB2D /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		F33C6E6126DCDA3A0083DB2D /* finalVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = finalVC.storyboard; sourceTree = "<group>"; };
+		F33C6E6326DCDA640083DB2D /* FinalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCoordinator.swift; sourceTree = "<group>"; };
+		F33C6E6526DCE1840083DB2D /* MiddleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleViewController.swift; sourceTree = "<group>"; };
+		F33C6E6726DCE19A0083DB2D /* middle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = middle.storyboard; sourceTree = "<group>"; };
+		F33C6E6926DCE1C10083DB2D /* MiddleVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleVCCoordinator.swift; sourceTree = "<group>"; };
 		F33F8C2A26DB9AE600C09D3D /* vc2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = vc2.storyboard; sourceTree = "<group>"; };
 		F3B0915A26D924C30020C7D0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F3E270C326D8CFB700D81C7E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -76,9 +96,12 @@
 				F3E270C226D8C9D400D81C7E /* Delegates */,
 				F314162326D79B0100321EFE /* Coordinators */,
 				F3E270C526D8D0D000D81C7E /* Model */,
+				F33C6E6B26DCE7130083DB2D /* ViewModel */,
 				F314160C26D7968600321EFE /* ViewController.swift */,
-				F3B0915A26D924C30020C7D0 /* TabBarController.swift */,
 				F314162426D79D9A00321EFE /* ViewController2.swift */,
+				F3B0915A26D924C30020C7D0 /* TabBarController.swift */,
+				F33C6E6526DCE1840083DB2D /* MiddleViewController.swift */,
+				F33C6E5F26DCDA2B0083DB2D /* FinalViewController.swift */,
 				F3E270C326D8CFB700D81C7E /* TableViewController.swift */,
 				F3E270C826D8DFD000D81C7E /* Storyboards */,
 				F314161426D7968900321EFE /* Assets.xcassets */,
@@ -93,8 +116,18 @@
 			children = (
 				F314162126D79AF900321EFE /* AppCoordinator.swift */,
 				F3E270C626D8D2B800D81C7E /* TableVCCoordinator.swift */,
+				F33C6E5D26DCC7DF0083DB2D /* AnotherCoordinator.swift */,
+				F33C6E6926DCE1C10083DB2D /* MiddleVCCoordinator.swift */,
+				F33C6E6326DCDA640083DB2D /* FinalCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		F33C6E6B26DCE7130083DB2D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F3E270C226D8C9D400D81C7E /* Delegates */ = {
@@ -109,6 +142,8 @@
 		F3E270C526D8D0D000D81C7E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F33C6E5B26DCB5AF0083DB2D /* Person.swift */,
+				F33C6E5926DCB5600083DB2D /* Status.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -118,6 +153,9 @@
 			children = (
 				F314160E26D7968600321EFE /* Main.storyboard */,
 				F33F8C2A26DB9AE600C09D3D /* vc2.storyboard */,
+				F33C6E5726DCB5340083DB2D /* table.storyboard */,
+				F33C6E6726DCE19A0083DB2D /* middle.storyboard */,
+				F33C6E6126DCDA3A0083DB2D /* finalVC.storyboard */,
 				F314161626D7968900321EFE /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -181,9 +219,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F33C6E6226DCDA3A0083DB2D /* finalVC.storyboard in Resources */,
+				F33C6E6826DCE19A0083DB2D /* middle.storyboard in Resources */,
 				F33F8C2B26DB9AE600C09D3D /* vc2.storyboard in Resources */,
 				F314161826D7968900321EFE /* LaunchScreen.storyboard in Resources */,
 				F314161526D7968900321EFE /* Assets.xcassets in Resources */,
+				F33C6E5826DCB5340083DB2D /* table.storyboard in Resources */,
 				F314161026D7968700321EFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,11 +257,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F314162526D79D9A00321EFE /* ViewController2.swift in Sources */,
+				F33C6E6026DCDA2B0083DB2D /* FinalViewController.swift in Sources */,
 				F314162226D79AF900321EFE /* AppCoordinator.swift in Sources */,
+				F33C6E6626DCE1840083DB2D /* MiddleViewController.swift in Sources */,
 				F314160D26D7968600321EFE /* ViewController.swift in Sources */,
+				F33C6E6A26DCE1C10083DB2D /* MiddleVCCoordinator.swift in Sources */,
 				F3B0915B26D924C30020C7D0 /* TabBarController.swift in Sources */,
+				F33C6E6426DCDA640083DB2D /* FinalCoordinator.swift in Sources */,
+				F33C6E5A26DCB5600083DB2D /* Status.swift in Sources */,
 				F3E270C426D8CFB700D81C7E /* TableViewController.swift in Sources */,
+				F33C6E5C26DCB5AF0083DB2D /* Person.swift in Sources */,
 				F3E270C726D8D2B800D81C7E /* TableVCCoordinator.swift in Sources */,
+				F33C6E5E26DCC7DF0083DB2D /* AnotherCoordinator.swift in Sources */,
 				F314160926D7968600321EFE /* AppDelegate.swift in Sources */,
 				F314160B26D7968600321EFE /* SceneDelegate.swift in Sources */,
 				F314161326D7968700321EFE /* MVVMC_App.xcdatamodeld in Sources */,

@@ -8,25 +8,23 @@
 import UIKit
 
 class TabBarController: UITabBarController {
+    var navVC1: UIViewController
+    var navVC2: UIViewController
+
+    init(navVC1 n1: UIViewController, navVC2 n2: UIViewController) {
+        navVC1 = n1
+        navVC2 = n2
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let storyboard = UIStoryboard(name: "vc2", bundle: nil)
-        let vc2 = storyboard.instantiateViewController(withIdentifier: "VC2")
-
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "VC1") as! ViewController
-        let navVC = UINavigationController(rootViewController: vc)
-
-        viewControllers = [navVC, vc2]
+        viewControllers = [navVC1, navVC2]
     }
-
-    /*
-     // MARK: - Navigation
-
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using segue.destination.
-         // Pass the selected object to the new view controller.
-     }
-     */
 }

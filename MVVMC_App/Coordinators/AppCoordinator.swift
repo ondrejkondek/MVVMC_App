@@ -13,7 +13,6 @@ class AppCoordinator: Coordinator {
     let window: UIWindow?
     var rootNavigationController: UINavigationController?
     var rootViewController: UIViewController?
-    var rootTabBarController = TabBarController()
 
     var childCoordinators: [Coordinator] = []
 
@@ -28,8 +27,25 @@ class AppCoordinator: Coordinator {
             return
         }
 
-        window.rootViewController = rootTabBarController
+        let childTableCoordinator = TableVCCoordinator()
+        let childAnotherCoordinator = AnotherCoordinator()
+
+        let vc1 = UIStoryboard(name: "table", bundle: nil).instantiateViewController(withIdentifier: "table") as! TableViewController
+        let navVC1 = UINavigationController(rootViewController: vc1)
+        vc1.coordinator = childTableCoordinator
+
+        let vc2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "VC1") as! ViewController
+        let navVC2 = UINavigationController(rootViewController: vc2)
+        vc2.coordinator = childAnotherCoordinator
+
+        let tabbar = TabBarController(navVC1: navVC1, navVC2: navVC2)
+        window.rootViewController = tabbar
         window.makeKeyAndVisible()
+
+        childTableCoordinator.start(root: tabbar, nav: navVC1)
+        addChildCoordinator(childTableCoordinator)
+        childAnotherCoordinator.start(root: tabbar, nav: navVC2)
+        addChildCoordinator(childTableCoordinator)
     }
 
     func finish() {}
@@ -38,5 +54,9 @@ class AppCoordinator: Coordinator {
 extension AppCoordinator {
     func addChildCoordinator(_ coordinator: Coordinator) {
         childCoordinators.append(coordinator)
+    }
+
+    func removeChildCoordinator(_: Coordinator) {
+        childCoordinators.removeLast()
     }
 }
