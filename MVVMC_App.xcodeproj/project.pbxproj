@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F30C77D626DE052800D8C098 /* TableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C77D526DE052800D8C098 /* TableViewViewModel.swift */; };
+		F30C77D826DE055E00D8C098 /* TableVCViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C77D726DE055E00D8C098 /* TableVCViewModelProtocols.swift */; };
+		F30C77DA26DE117A00D8C098 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C77D926DE117A00D8C098 /* TableViewCell.swift */; };
+		F30C77DE26DE2C0600D8C098 /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C77DD26DE2C0600D8C098 /* InfoViewModel.swift */; };
+		F30C77E126DE2CA400D8C098 /* InfoViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C77E026DE2CA400D8C098 /* InfoViewModelProtocols.swift */; };
 		F314160926D7968600321EFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314160826D7968600321EFE /* AppDelegate.swift */; };
 		F314160B26D7968600321EFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314160A26D7968600321EFE /* SceneDelegate.swift */; };
 		F314160D26D7968600321EFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314160C26D7968600321EFE /* ViewController.swift */; };
@@ -18,8 +23,7 @@
 		F314162226D79AF900321EFE /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314162126D79AF900321EFE /* AppCoordinator.swift */; };
 		F314162526D79D9A00321EFE /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314162426D79D9A00321EFE /* ViewController2.swift */; };
 		F33C6E5826DCB5340083DB2D /* table.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33C6E5726DCB5340083DB2D /* table.storyboard */; };
-		F33C6E5A26DCB5600083DB2D /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C6E5926DCB5600083DB2D /* Status.swift */; };
-		F33C6E5C26DCB5AF0083DB2D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C6E5B26DCB5AF0083DB2D /* Person.swift */; };
+		F33C6E5C26DCB5AF0083DB2D /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C6E5B26DCB5AF0083DB2D /* Status.swift */; };
 		F33C6E5E26DCC7DF0083DB2D /* AnotherCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C6E5D26DCC7DF0083DB2D /* AnotherCoordinator.swift */; };
 		F33C6E6026DCDA2B0083DB2D /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C6E5F26DCDA2B0083DB2D /* FinalViewController.swift */; };
 		F33C6E6226DCDA3A0083DB2D /* finalVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33C6E6126DCDA3A0083DB2D /* finalVC.storyboard */; };
@@ -34,6 +38,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F30C77D526DE052800D8C098 /* TableViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewModel.swift; sourceTree = "<group>"; };
+		F30C77D726DE055E00D8C098 /* TableVCViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVCViewModelProtocols.swift; sourceTree = "<group>"; };
+		F30C77D926DE117A00D8C098 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F30C77DD26DE2C0600D8C098 /* InfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
+		F30C77E026DE2CA400D8C098 /* InfoViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModelProtocols.swift; sourceTree = "<group>"; };
 		F314160526D7968600321EFE /* MVVMC_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMC_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F314160826D7968600321EFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F314160A26D7968600321EFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,8 +56,7 @@
 		F314162126D79AF900321EFE /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F314162426D79D9A00321EFE /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		F33C6E5726DCB5340083DB2D /* table.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = table.storyboard; sourceTree = "<group>"; };
-		F33C6E5926DCB5600083DB2D /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
-		F33C6E5B26DCB5AF0083DB2D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F33C6E5B26DCB5AF0083DB2D /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		F33C6E5D26DCC7DF0083DB2D /* AnotherCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherCoordinator.swift; sourceTree = "<group>"; };
 		F33C6E5F26DCDA2B0083DB2D /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		F33C6E6126DCDA3A0083DB2D /* finalVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = finalVC.storyboard; sourceTree = "<group>"; };
@@ -73,6 +81,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F30C77DB26DE192800D8C098 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F314160C26D7968600321EFE /* ViewController.swift */,
+				F314162426D79D9A00321EFE /* ViewController2.swift */,
+				F3B0915A26D924C30020C7D0 /* TabBarController.swift */,
+				F33C6E6526DCE1840083DB2D /* MiddleViewController.swift */,
+				F33C6E5F26DCDA2B0083DB2D /* FinalViewController.swift */,
+				F3E270C326D8CFB700D81C7E /* TableViewController.swift */,
+				F30C77DC26DE193D00D8C098 /* Components */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F30C77DC26DE193D00D8C098 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F30C77D926DE117A00D8C098 /* TableViewCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		F31415FC26D7968600321EFE = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +127,7 @@
 				F314162326D79B0100321EFE /* Coordinators */,
 				F3E270C526D8D0D000D81C7E /* Model */,
 				F33C6E6B26DCE7130083DB2D /* ViewModel */,
-				F314160C26D7968600321EFE /* ViewController.swift */,
-				F314162426D79D9A00321EFE /* ViewController2.swift */,
-				F3B0915A26D924C30020C7D0 /* TabBarController.swift */,
-				F33C6E6526DCE1840083DB2D /* MiddleViewController.swift */,
-				F33C6E5F26DCDA2B0083DB2D /* FinalViewController.swift */,
-				F3E270C326D8CFB700D81C7E /* TableViewController.swift */,
+				F30C77DB26DE192800D8C098 /* Controllers */,
 				F3E270C826D8DFD000D81C7E /* Storyboards */,
 				F314161426D7968900321EFE /* Assets.xcassets */,
 				F314161926D7968900321EFE /* Info.plist */,
@@ -126,6 +151,10 @@
 		F33C6E6B26DCE7130083DB2D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F30C77D526DE052800D8C098 /* TableViewViewModel.swift */,
+				F30C77D726DE055E00D8C098 /* TableVCViewModelProtocols.swift */,
+				F30C77DD26DE2C0600D8C098 /* InfoViewModel.swift */,
+				F30C77E026DE2CA400D8C098 /* InfoViewModelProtocols.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -142,8 +171,7 @@
 		F3E270C526D8D0D000D81C7E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F33C6E5B26DCB5AF0083DB2D /* Person.swift */,
-				F33C6E5926DCB5600083DB2D /* Status.swift */,
+				F33C6E5B26DCB5AF0083DB2D /* Status.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -259,19 +287,23 @@
 				F314162526D79D9A00321EFE /* ViewController2.swift in Sources */,
 				F33C6E6026DCDA2B0083DB2D /* FinalViewController.swift in Sources */,
 				F314162226D79AF900321EFE /* AppCoordinator.swift in Sources */,
+				F30C77D826DE055E00D8C098 /* TableVCViewModelProtocols.swift in Sources */,
 				F33C6E6626DCE1840083DB2D /* MiddleViewController.swift in Sources */,
+				F30C77E126DE2CA400D8C098 /* InfoViewModelProtocols.swift in Sources */,
+				F30C77DA26DE117A00D8C098 /* TableViewCell.swift in Sources */,
 				F314160D26D7968600321EFE /* ViewController.swift in Sources */,
 				F33C6E6A26DCE1C10083DB2D /* MiddleVCCoordinator.swift in Sources */,
 				F3B0915B26D924C30020C7D0 /* TabBarController.swift in Sources */,
 				F33C6E6426DCDA640083DB2D /* FinalCoordinator.swift in Sources */,
-				F33C6E5A26DCB5600083DB2D /* Status.swift in Sources */,
+				F30C77DE26DE2C0600D8C098 /* InfoViewModel.swift in Sources */,
 				F3E270C426D8CFB700D81C7E /* TableViewController.swift in Sources */,
-				F33C6E5C26DCB5AF0083DB2D /* Person.swift in Sources */,
+				F33C6E5C26DCB5AF0083DB2D /* Status.swift in Sources */,
 				F3E270C726D8D2B800D81C7E /* TableVCCoordinator.swift in Sources */,
 				F33C6E5E26DCC7DF0083DB2D /* AnotherCoordinator.swift in Sources */,
 				F314160926D7968600321EFE /* AppDelegate.swift in Sources */,
 				F314160B26D7968600321EFE /* SceneDelegate.swift in Sources */,
 				F314161326D7968700321EFE /* MVVMC_App.xcdatamodeld in Sources */,
+				F30C77D626DE052800D8C098 /* TableViewViewModel.swift in Sources */,
 				F314162026D79A3F00321EFE /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

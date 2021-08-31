@@ -33,6 +33,7 @@ class AppCoordinator: Coordinator {
         let vc1 = UIStoryboard(name: "table", bundle: nil).instantiateViewController(withIdentifier: "table") as! TableViewController
         let navVC1 = UINavigationController(rootViewController: vc1)
         vc1.coordinator = childTableCoordinator
+        vc1.viewModel = TableViewViewModel(persons: [Status(name: "Jack", surname: "John", created: Date(), about: "I am a testing person")])
 
         let vc2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "VC1") as! ViewController
         let navVC2 = UINavigationController(rootViewController: vc2)

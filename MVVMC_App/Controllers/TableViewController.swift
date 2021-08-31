@@ -9,12 +9,22 @@ import UIKit
 
 class TableViewController: UITableViewController {
     var coordinator: TableVCCoordinator?
+    var viewModel: TableViewViewModel! {
+        didSet {
+            viewModel.viewDelegate = self
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Table Example"
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 600
         setupTapBar()
+
+        title = viewModel.headerText
+        viewModel.getSomeExtraPeople()
     }
 
     // MARK: - Table view data source
@@ -26,16 +36,25 @@ class TableViewController: UITableViewController {
 
     override func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return viewModel.numberOfItems()
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
+
+        cell.name.text = viewModel.people[indexPath.row].name
+        cell.statusText.text = viewModel.people[indexPath.row].about
+        let date = viewModel.people[indexPath.row].created
+        cell.created.text = viewModel.getStringFromDate(date: date ?? Date())
+
         return cell
     }
 
     override func tableView(_: UITableView, didSelectRowAt _: IndexPath) {
-        coordinator?.addView()
+        let indexPath = tableView.indexPathForSelectedRow
+        let status = viewModel.people[indexPath?.row ?? 0]
+
+        coordinator?.getMoreInfo(info: status)
     }
 }
 
@@ -53,5 +72,11 @@ extension TableViewController {
         } else {
             // Fallback on earlier versions
         }
+    }
+}
+
+extension TableViewController: TableViewViewModelViewDelegate {
+    func updateScreen() {
+        tableView.reloadData()
     }
 }
