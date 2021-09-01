@@ -22,12 +22,17 @@ class TableVCCoordinator: Coordinator {
 
     func finish() {}
 
-    func getMoreInfo(info: Status) {
+    func getMoreInfo(info: Status, vcCaller: UIViewController) {
         let vc = UIStoryboard(name: "vc2", bundle: nil).instantiateViewController(withIdentifier: "VC2") as! ViewController2
         vc.coordinator = self
-        // treba ziskat spravne data od viewModel
+
         vc.viewModel = InfoViewModel(info: info)
+        vc.infoViewDelegate = vcCaller as? SendInfoViewDelegate
 
         rootNavigationController?.pushViewController(vc, animated: true)
+    }
+
+    func changedStatusText() {
+        rootNavigationController?.popToRootViewController(animated: true)
     }
 }

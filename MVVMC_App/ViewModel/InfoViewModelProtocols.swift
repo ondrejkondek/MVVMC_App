@@ -10,6 +10,4 @@ import Foundation
 // This delegate should be set by the coordinator when it creates each corresponding ViewModel.
 protocol InfoViewModelViewDelegate {
     func updateScreen()
-
-//    func updateState(_ state: ViewControllerState)
 }

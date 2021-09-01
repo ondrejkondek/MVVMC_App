@@ -7,6 +7,11 @@
 
 import UIKit
 
+// Testing protocol to get data back from pushed VC
+protocol SendInfoViewDelegate {
+    func changeDescription(info: String)
+}
+
 class TableViewController: UITableViewController {
     var coordinator: TableVCCoordinator?
     var viewModel: TableViewViewModel! {
@@ -14,6 +19,8 @@ class TableViewController: UITableViewController {
             viewModel.viewDelegate = self
         }
     }
+
+    var chosenCell: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,8 +60,8 @@ class TableViewController: UITableViewController {
     override func tableView(_: UITableView, didSelectRowAt _: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow
         let status = viewModel.people[indexPath?.row ?? 0]
-
-        coordinator?.getMoreInfo(info: status)
+        chosenCell = indexPath?.row
+        coordinator?.getMoreInfo(info: status, vcCaller: self)
     }
 }
 
@@ -72,11 +79,25 @@ extension TableViewController {
         } else {
             // Fallback on earlier versions
         }
+        tabBarController?.tabBar.items?[2].title = "API"
+        if #available(iOS 13.0, *) {
+            tabBarController?.tabBar.items?[2].image = UIImage(systemName: "circle.fill")
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }
 
 extension TableViewController: TableViewViewModelViewDelegate {
     func updateScreen() {
+        tableView.reloadData()
+    }
+}
+
+// TESTING Delegates to get info back from pushed VC
+extension TableViewController: SendInfoViewDelegate {
+    func changeDescription(info: String) {
+        viewModel.people[chosenCell ?? 0].about = info
         tableView.reloadData()
     }
 }

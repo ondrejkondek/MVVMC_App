@@ -15,19 +15,12 @@ protocol TableViewModelType {
     var viewDelegate: TableViewViewModelViewDelegate? { get set }
 
     // Data Source
-//    var shouldShowHeader: Bool { get }
-
     var headerText: String { get }
-
     func numberOfItems() -> Int
-
-//    func itemFor(row: Int) -> PlaceViewDataType
 
     // Events
     func start()
-
-//    func searchFor(text: String)
-    func didSelectRow(_ row: Int, from controller: UIViewController)
+//    func didSelectRow(_ row: Int, from controller: UIViewController)
 //    func didSelectClose(from controller: UIViewController)
 }
 
@@ -36,7 +29,6 @@ protocol TableViewModelType {
 // This delegate should be set by the coordinator when it creates each corresponding ViewModel.
 protocol TableViewViewModelCoordinatorDelegate {
 //    func didSelect(place: TripPlace, from controller: UIViewController)
-//    func didSelectClose(from viewModel: LocationSearchViewModel, from controller: UIViewController)
 }
 
 // MARK: This delegate protocol will let us bubble up any action’s that we can’t handle and must be handled by our coordinator.

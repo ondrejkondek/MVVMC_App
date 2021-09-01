@@ -10,10 +10,11 @@ import UIKit
 class TabBarController: UITabBarController {
     var navVC1: UIViewController
     var navVC2: UIViewController
-
-    init(navVC1 n1: UIViewController, navVC2 n2: UIViewController) {
+    var vc: UIViewController
+    init(navVC1 n1: UIViewController, navVC2 n2: UIViewController, vc n3: UIViewController) {
         navVC1 = n1
         navVC2 = n2
+        vc = n3
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -24,7 +25,6 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        viewControllers = [navVC1, navVC2]
+        viewControllers = [navVC1, navVC2, vc]
     }
 }

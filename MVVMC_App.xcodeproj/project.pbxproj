@@ -33,8 +33,13 @@
 		F33C6E6A26DCE1C10083DB2D /* MiddleVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C6E6926DCE1C10083DB2D /* MiddleVCCoordinator.swift */; };
 		F33F8C2B26DB9AE600C09D3D /* vc2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33F8C2A26DB9AE600C09D3D /* vc2.storyboard */; };
 		F3B0915B26D924C30020C7D0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0915A26D924C30020C7D0 /* TabBarController.swift */; };
+		F3B4E9C226DE637400449604 /* APICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B4E9C126DE637400449604 /* APICoordinator.swift */; };
+		F3B4E9C426DE63B700449604 /* APIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B4E9C326DE63B700449604 /* APIViewController.swift */; };
+		F3B4E9C626DE63C600449604 /* API.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B4E9C526DE63C600449604 /* API.storyboard */; };
+		F3B4E9C826DE666000449604 /* APIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B4E9C726DE666000449604 /* APIViewModel.swift */; };
 		F3E270C426D8CFB700D81C7E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E270C326D8CFB700D81C7E /* TableViewController.swift */; };
 		F3E270C726D8D2B800D81C7E /* TableVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E270C626D8D2B800D81C7E /* TableVCCoordinator.swift */; };
+		F3F484A426DFB15B00E9D459 /* APIViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F484A326DFB15B00E9D459 /* APIViewModelProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,8 +71,13 @@
 		F33C6E6926DCE1C10083DB2D /* MiddleVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleVCCoordinator.swift; sourceTree = "<group>"; };
 		F33F8C2A26DB9AE600C09D3D /* vc2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = vc2.storyboard; sourceTree = "<group>"; };
 		F3B0915A26D924C30020C7D0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F3B4E9C126DE637400449604 /* APICoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICoordinator.swift; sourceTree = "<group>"; };
+		F3B4E9C326DE63B700449604 /* APIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViewController.swift; sourceTree = "<group>"; };
+		F3B4E9C526DE63C600449604 /* API.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = API.storyboard; sourceTree = "<group>"; };
+		F3B4E9C726DE666000449604 /* APIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViewModel.swift; sourceTree = "<group>"; };
 		F3E270C326D8CFB700D81C7E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F3E270C626D8D2B800D81C7E /* TableVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVCCoordinator.swift; sourceTree = "<group>"; };
+		F3F484A326DFB15B00E9D459 /* APIViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViewModelProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,13 +94,12 @@
 		F30C77DB26DE192800D8C098 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F314160C26D7968600321EFE /* ViewController.swift */,
 				F314162426D79D9A00321EFE /* ViewController2.swift */,
 				F3B0915A26D924C30020C7D0 /* TabBarController.swift */,
-				F33C6E6526DCE1840083DB2D /* MiddleViewController.swift */,
-				F33C6E5F26DCDA2B0083DB2D /* FinalViewController.swift */,
 				F3E270C326D8CFB700D81C7E /* TableViewController.swift */,
+				F3B4E9C326DE63B700449604 /* APIViewController.swift */,
 				F30C77DC26DE193D00D8C098 /* Components */,
+				F3F484A626DFB49000E9D459 /* TestingControllers */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -141,9 +150,8 @@
 			children = (
 				F314162126D79AF900321EFE /* AppCoordinator.swift */,
 				F3E270C626D8D2B800D81C7E /* TableVCCoordinator.swift */,
-				F33C6E5D26DCC7DF0083DB2D /* AnotherCoordinator.swift */,
-				F33C6E6926DCE1C10083DB2D /* MiddleVCCoordinator.swift */,
-				F33C6E6326DCDA640083DB2D /* FinalCoordinator.swift */,
+				F3B4E9C126DE637400449604 /* APICoordinator.swift */,
+				F3F484A526DFB47500E9D459 /* TestingCoordinators */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -155,6 +163,8 @@
 				F30C77D726DE055E00D8C098 /* TableVCViewModelProtocols.swift */,
 				F30C77DD26DE2C0600D8C098 /* InfoViewModel.swift */,
 				F30C77E026DE2CA400D8C098 /* InfoViewModelProtocols.swift */,
+				F3B4E9C726DE666000449604 /* APIViewModel.swift */,
+				F3F484A326DFB15B00E9D459 /* APIViewModelProtocols.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -179,14 +189,43 @@
 		F3E270C826D8DFD000D81C7E /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				F314160E26D7968600321EFE /* Main.storyboard */,
+				F314161626D7968900321EFE /* LaunchScreen.storyboard */,
 				F33F8C2A26DB9AE600C09D3D /* vc2.storyboard */,
 				F33C6E5726DCB5340083DB2D /* table.storyboard */,
-				F33C6E6726DCE19A0083DB2D /* middle.storyboard */,
-				F33C6E6126DCDA3A0083DB2D /* finalVC.storyboard */,
-				F314161626D7968900321EFE /* LaunchScreen.storyboard */,
+				F3B4E9C526DE63C600449604 /* API.storyboard */,
+				F3F484A726DFB4B000E9D459 /* TestingStoryboards */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F3F484A526DFB47500E9D459 /* TestingCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F33C6E5D26DCC7DF0083DB2D /* AnotherCoordinator.swift */,
+				F33C6E6926DCE1C10083DB2D /* MiddleVCCoordinator.swift */,
+				F33C6E6326DCDA640083DB2D /* FinalCoordinator.swift */,
+			);
+			path = TestingCoordinators;
+			sourceTree = "<group>";
+		};
+		F3F484A626DFB49000E9D459 /* TestingControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F314160C26D7968600321EFE /* ViewController.swift */,
+				F33C6E6526DCE1840083DB2D /* MiddleViewController.swift */,
+				F33C6E5F26DCDA2B0083DB2D /* FinalViewController.swift */,
+			);
+			path = TestingControllers;
+			sourceTree = "<group>";
+		};
+		F3F484A726DFB4B000E9D459 /* TestingStoryboards */ = {
+			isa = PBXGroup;
+			children = (
+				F314160E26D7968600321EFE /* Main.storyboard */,
+				F33C6E6726DCE19A0083DB2D /* middle.storyboard */,
+				F33C6E6126DCDA3A0083DB2D /* finalVC.storyboard */,
+			);
+			path = TestingStoryboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +293,7 @@
 				F314161526D7968900321EFE /* Assets.xcassets in Resources */,
 				F33C6E5826DCB5340083DB2D /* table.storyboard in Resources */,
 				F314161026D7968700321EFE /* Main.storyboard in Resources */,
+				F3B4E9C626DE63C600449604 /* API.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +327,7 @@
 				F314162526D79D9A00321EFE /* ViewController2.swift in Sources */,
 				F33C6E6026DCDA2B0083DB2D /* FinalViewController.swift in Sources */,
 				F314162226D79AF900321EFE /* AppCoordinator.swift in Sources */,
+				F3B4E9C826DE666000449604 /* APIViewModel.swift in Sources */,
 				F30C77D826DE055E00D8C098 /* TableVCViewModelProtocols.swift in Sources */,
 				F33C6E6626DCE1840083DB2D /* MiddleViewController.swift in Sources */,
 				F30C77E126DE2CA400D8C098 /* InfoViewModelProtocols.swift in Sources */,
@@ -301,9 +342,12 @@
 				F3E270C726D8D2B800D81C7E /* TableVCCoordinator.swift in Sources */,
 				F33C6E5E26DCC7DF0083DB2D /* AnotherCoordinator.swift in Sources */,
 				F314160926D7968600321EFE /* AppDelegate.swift in Sources */,
+				F3F484A426DFB15B00E9D459 /* APIViewModelProtocols.swift in Sources */,
 				F314160B26D7968600321EFE /* SceneDelegate.swift in Sources */,
 				F314161326D7968700321EFE /* MVVMC_App.xcdatamodeld in Sources */,
+				F3B4E9C226DE637400449604 /* APICoordinator.swift in Sources */,
 				F30C77D626DE052800D8C098 /* TableViewViewModel.swift in Sources */,
+				F3B4E9C426DE63B700449604 /* APIViewController.swift in Sources */,
 				F314162026D79A3F00321EFE /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

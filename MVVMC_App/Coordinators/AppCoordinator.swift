@@ -29,7 +29,23 @@ class AppCoordinator: Coordinator {
 
         let childTableCoordinator = TableVCCoordinator()
         let childAnotherCoordinator = AnotherCoordinator()
+        let childAPICoordinator = APICoordinator()
 
+        let vcs = createVCsForTabBar(childTableCoordinator: childTableCoordinator, childAnotherCoordinator: childAnotherCoordinator, childAPICoordinator: childAPICoordinator)
+
+        let tabbar = TabBarController(navVC1: vcs.0, navVC2: vcs.1, vc: vcs.2)
+        window.rootViewController = tabbar
+        window.makeKeyAndVisible()
+
+        childTableCoordinator.start(root: tabbar, nav: vcs.0)
+        addChildCoordinator(childTableCoordinator)
+        childAnotherCoordinator.start(root: tabbar, nav: vcs.1)
+        addChildCoordinator(childTableCoordinator)
+        childAPICoordinator.start(root: tabbar)
+        addChildCoordinator(childAPICoordinator)
+    }
+
+    func createVCsForTabBar(childTableCoordinator: TableVCCoordinator, childAnotherCoordinator: AnotherCoordinator, childAPICoordinator: APICoordinator) -> (UINavigationController, UINavigationController, UIViewController) {
         let vc1 = UIStoryboard(name: "table", bundle: nil).instantiateViewController(withIdentifier: "table") as! TableViewController
         let navVC1 = UINavigationController(rootViewController: vc1)
         vc1.coordinator = childTableCoordinator
@@ -39,14 +55,11 @@ class AppCoordinator: Coordinator {
         let navVC2 = UINavigationController(rootViewController: vc2)
         vc2.coordinator = childAnotherCoordinator
 
-        let tabbar = TabBarController(navVC1: navVC1, navVC2: navVC2)
-        window.rootViewController = tabbar
-        window.makeKeyAndVisible()
+        let vc = UIStoryboard(name: "API", bundle: nil).instantiateViewController(withIdentifier: "api") as! APIViewController
+        vc.coordinator = childAPICoordinator
+        vc.viewModel = APIViewModel()
 
-        childTableCoordinator.start(root: tabbar, nav: navVC1)
-        addChildCoordinator(childTableCoordinator)
-        childAnotherCoordinator.start(root: tabbar, nav: navVC2)
-        addChildCoordinator(childTableCoordinator)
+        return (navVC1, navVC2, vc)
     }
 
     func finish() {}
