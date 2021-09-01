@@ -13,7 +13,6 @@
 		F30C77DE26DE2C0600D8C098 /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C77DD26DE2C0600D8C098 /* InfoViewModel.swift */; };
 		F30C77E126DE2CA400D8C098 /* InfoViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C77E026DE2CA400D8C098 /* InfoViewModelProtocols.swift */; };
 		F314160926D7968600321EFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314160826D7968600321EFE /* AppDelegate.swift */; };
-		F314160B26D7968600321EFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314160A26D7968600321EFE /* SceneDelegate.swift */; };
 		F314160D26D7968600321EFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314160C26D7968600321EFE /* ViewController.swift */; };
 		F314161026D7968700321EFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F314160E26D7968600321EFE /* Main.storyboard */; };
 		F314161326D7968700321EFE /* MVVMC_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F314161126D7968700321EFE /* MVVMC_App.xcdatamodeld */; };
@@ -50,7 +49,6 @@
 		F30C77E026DE2CA400D8C098 /* InfoViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModelProtocols.swift; sourceTree = "<group>"; };
 		F314160526D7968600321EFE /* MVVMC_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMC_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F314160826D7968600321EFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F314160A26D7968600321EFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F314160C26D7968600321EFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F314160F26D7968600321EFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F314161226D7968700321EFE /* MVVMC_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVVMC_App.xcdatamodel; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				F314160826D7968600321EFE /* AppDelegate.swift */,
-				F314160A26D7968600321EFE /* SceneDelegate.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -343,7 +340,6 @@
 				F33C6E5E26DCC7DF0083DB2D /* AnotherCoordinator.swift in Sources */,
 				F314160926D7968600321EFE /* AppDelegate.swift in Sources */,
 				F3F484A426DFB15B00E9D459 /* APIViewModelProtocols.swift in Sources */,
-				F314160B26D7968600321EFE /* SceneDelegate.swift in Sources */,
 				F314161326D7968700321EFE /* MVVMC_App.xcdatamodeld in Sources */,
 				F3B4E9C226DE637400449604 /* APICoordinator.swift in Sources */,
 				F30C77D626DE052800D8C098 /* TableViewViewModel.swift in Sources */,
@@ -425,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -480,7 +476,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

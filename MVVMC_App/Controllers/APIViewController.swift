@@ -49,7 +49,7 @@ extension APIViewController: APIViewModelViewDelegate {
                     print("destructive")
 
                 @unknown default:
-                    print("UNKOWN")
+                    print("UNKNOWN")
                 }
             }))
             self.present(alert, animated: true, completion: nil)

@@ -21,9 +21,11 @@ class APIViewModel {
 
     func apiCall(name: String) {
         let url = getURL(name: name)
+        // encode string! / url allowed
         guard let URLstring = URL(string: url) else {
             return
         }
+        print(url)
         let task = URLSession.shared.dataTask(with: URLstring, completionHandler: {
             data, _, error in
             guard let data = data, error == nil else {
