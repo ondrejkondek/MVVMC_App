@@ -28,7 +28,7 @@ protocol TableViewModelType {
 
 // This delegate should be set by the coordinator when it creates each corresponding ViewModel.
 protocol TableViewViewModelCoordinatorDelegate {
-//    func didSelect(place: TripPlace, from controller: UIViewController)
+    func getMoreInfo(info: Status, vcCaller: UIViewController)
 }
 
 // MARK: This delegate protocol will let us bubble up any action’s that we can’t handle and must be handled by our coordinator.

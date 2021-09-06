@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol TableViewCellDelegate {
+    func updateContent(content: Status)
+}
+
 class TableViewCell: UITableViewCell {
     @IBOutlet var profileImage: UIImageView!
     @IBOutlet var name: UILabel!
@@ -29,5 +33,14 @@ class TableViewCell: UITableViewCell {
         }
         profileImage.contentMode = .scaleAspectFill
         profileImage.image = UIImage(named: "profile")
+    }
+}
+
+extension TableViewCell: TableViewCellDelegate {
+    func updateContent(content: Status) {
+        name.text = content.name
+        statusText.text = content.about
+        let date = content.created
+        created.text = date?.getStringFromDate()
     }
 }

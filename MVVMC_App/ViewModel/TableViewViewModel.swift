@@ -33,11 +33,8 @@ class TableViewViewModel {
         viewDelegate?.updateScreen()
     }
 
-    func getStringFromDate(date: Date) -> String {
-        let df = DateFormatter()
-        df.dateFormat = "YY-MM-dd HH:MM:ss"
-        let str = df.string(from: date)
-        return "Created at " + str
+    func selectRow(info: Status, vcCaller: UIViewController) {
+        coordinatorDelegate?.getMoreInfo(info: info, vcCaller: vcCaller)
     }
 }
 
