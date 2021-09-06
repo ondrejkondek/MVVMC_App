@@ -16,7 +16,7 @@ class InfoViewModel {
         status = info
     }
 
-    func saveNewInfo() {
-        coordinatorDelegate.popToRoot()
+    func saveNewInfo(info: String) {
+        coordinatorDelegate.popToRoot(info: info)
     }
 }

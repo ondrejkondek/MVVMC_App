@@ -13,5 +13,5 @@ protocol InfoViewModelViewDelegate {
 }
 
 protocol InfoViewViewModelCoordinatorDelegate {
-    func popToRoot()
+    func popToRoot(info: String)
 }

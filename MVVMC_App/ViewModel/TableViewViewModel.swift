@@ -33,7 +33,10 @@ class TableViewViewModel {
         viewDelegate?.updateScreen()
     }
 
-    func selectRow(info _: Status, vcCaller _: UIViewController) {}
+    func updateDataInTable(info: String) {
+        people[viewDelegate?.chosenCell ?? 0].about = info
+        viewDelegate?.updateScreen()
+    }
 }
 
 extension TableViewViewModel: TableViewModelType {

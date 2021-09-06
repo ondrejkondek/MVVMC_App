@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController2: UIViewController {
     // Delegate for testing and sending the info back to rootVC
-    var infoViewDelegate: SendInfoViewDelegate?
+//    var infoViewDelegate: SendInfoViewDelegate?
 
     @IBOutlet var name: UILabel!
     @IBOutlet var surname: UILabel!
@@ -43,8 +43,9 @@ class ViewController2: UIViewController {
     }
 
     @IBAction func save(_: Any) {
-        viewModel.saveNewInfo()
-        infoViewDelegate?.changeDescription(info: statusText.text)
+        viewModel.saveNewInfo(info: statusText.text)
+//        infoViewDelegate?.changeDescription(info: statusText.text)
+        // zmena dat pre ViewModel
     }
 }
 

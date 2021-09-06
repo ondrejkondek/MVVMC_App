@@ -8,12 +8,19 @@
 import UIKit
 
 // Testing protocol to get data back from pushed VC
-protocol SendInfoViewDelegate {
-    func changeDescription(info: String)
-}
+// protocol SendInfoViewDelegate {
+//    func changeDescription(info: String)
+// }
+
+// TESTING Delegates to get info back from pushed VC
+// extension TableViewController: SendInfoViewDelegate {
+//    func changeDescription(info: String) {
+//        viewModel.people[chosenCell ?? 0].about = info
+//        tableView.reloadData()
+//    }
+// }
 
 class TableViewController: UITableViewController {
-//    var coordinator: TableVCCoordinator?
     var viewModel: TableViewViewModel! {
         didSet {
             viewModel.viewDelegate = self
@@ -60,14 +67,6 @@ class TableViewController: UITableViewController {
 
 extension TableViewController: TableViewViewModelViewDelegate {
     func updateScreen() {
-        tableView.reloadData()
-    }
-}
-
-// TESTING Delegates to get info back from pushed VC
-extension TableViewController: SendInfoViewDelegate {
-    func changeDescription(info: String) {
-        viewModel.people[chosenCell ?? 0].about = info
         tableView.reloadData()
     }
 }

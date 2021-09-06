@@ -29,12 +29,14 @@ protocol TableViewModelType {
 // This delegate should be set by the coordinator when it creates each corresponding ViewModel.
 protocol TableViewViewModelCoordinatorDelegate {
     func getMoreInfo(info: Status, vcCaller: UIViewController)
+    func getChangedInfo(info: String)
 }
 
 // MARK: This delegate protocol will let us bubble up any action’s that we can’t handle and must be handled by our coordinator.
 
 // This delegate should be set by the coordinator when it creates each corresponding ViewModel.
 protocol TableViewViewModelViewDelegate {
+    var chosenCell: Int? { get set }
     func updateScreen()
 
 //    func updateState(_ state: ViewControllerState)

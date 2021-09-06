@@ -12,8 +12,7 @@ class TableVCCoordinator: Coordinator {
 
     var rootViewController: UIViewController?
     var rootNavigationController: UINavigationController?
-
-    init() {}
+//    var thisVC: UIViewController?
 
     func start(root: UIViewController, nav: UINavigationController) {
         rootViewController = root
@@ -24,19 +23,23 @@ class TableVCCoordinator: Coordinator {
 }
 
 extension TableVCCoordinator: TableViewViewModelCoordinatorDelegate {
-    func getMoreInfo(info: Status, vcCaller: UIViewController) {
+    func getChangedInfo(info: String) {
+        let vc = rootNavigationController?.viewControllers[0] as! TableViewController
+        vc.viewModel.updateDataInTable(info: info)
+    }
+
+    func getMoreInfo(info: Status, vcCaller _: UIViewController) {
         let vc = UIStoryboard(name: "vc2", bundle: nil).instantiateViewController(withIdentifier: "VC2") as! ViewController2
+
+        let coor = InfoCoordinator()
+        coor.parentCoordinator = self
+        coor.start(root: rootViewController!, nav: rootNavigationController!)
+
         let vm = InfoViewModel(info: info)
-        vm.coordinatorDelegate = self
+        vm.coordinatorDelegate = coor
         vc.viewModel = vm
-        vc.infoViewDelegate = vcCaller as? SendInfoViewDelegate
+//        vc.infoViewDelegate = vcCaller as? SendInfoViewDelegate
 
         rootNavigationController?.pushViewController(vc, animated: true)
-    }
-}
-
-extension TableVCCoordinator: InfoViewViewModelCoordinatorDelegate {
-    func popToRoot() {
-        rootNavigationController?.popToRootViewController(animated: true)
     }
 }
