@@ -20,7 +20,7 @@ protocol TableViewModelType {
 
     // Events
     func start()
-//    func didSelectRow(_ row: Int, from controller: UIViewController)
+    func didSelectRow(row: Int, from controller: UIViewController)
 //    func didSelectClose(from controller: UIViewController)
 }
 

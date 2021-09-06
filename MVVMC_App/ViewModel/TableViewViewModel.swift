@@ -33,9 +33,7 @@ class TableViewViewModel {
         viewDelegate?.updateScreen()
     }
 
-    func selectRow(info: Status, vcCaller: UIViewController) {
-        coordinatorDelegate?.getMoreInfo(info: info, vcCaller: vcCaller)
-    }
+    func selectRow(info _: Status, vcCaller _: UIViewController) {}
 }
 
 extension TableViewViewModel: TableViewModelType {
@@ -49,5 +47,8 @@ extension TableViewViewModel: TableViewModelType {
     }
 
     // events
-    func didSelectRow(_: Int, from _: UIViewController) {}
+    func didSelectRow(row: Int, from: UIViewController) {
+        let status = people[row]
+        coordinatorDelegate?.getMoreInfo(info: status, vcCaller: from)
+    }
 }

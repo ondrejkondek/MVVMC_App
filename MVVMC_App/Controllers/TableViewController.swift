@@ -53,9 +53,8 @@ class TableViewController: UITableViewController {
 
     override func tableView(_: UITableView, didSelectRowAt _: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow
-        let status = viewModel.people[indexPath?.row ?? 0]
         chosenCell = indexPath?.row
-        viewModel.selectRow(info: status, vcCaller: self)
+        viewModel.didSelectRow(row: indexPath?.row ?? 0, from: self)
     }
 }
 
