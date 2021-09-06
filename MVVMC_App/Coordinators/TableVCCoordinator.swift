@@ -21,20 +21,22 @@ class TableVCCoordinator: Coordinator {
     }
 
     func finish() {}
-
-    func changedStatusText() {
-        rootNavigationController?.popToRootViewController(animated: true)
-    }
 }
 
 extension TableVCCoordinator: TableViewViewModelCoordinatorDelegate {
     func getMoreInfo(info: Status, vcCaller: UIViewController) {
         let vc = UIStoryboard(name: "vc2", bundle: nil).instantiateViewController(withIdentifier: "VC2") as! ViewController2
-        vc.coordinator = self
-
-        vc.viewModel = InfoViewModel(info: info)
+        let vm = InfoViewModel(info: info)
+        vm.coordinatorDelegate = self
+        vc.viewModel = vm
         vc.infoViewDelegate = vcCaller as? SendInfoViewDelegate
 
         rootNavigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+extension TableVCCoordinator: InfoViewViewModelCoordinatorDelegate {
+    func popToRoot() {
+        rootNavigationController?.popToRootViewController(animated: true)
     }
 }

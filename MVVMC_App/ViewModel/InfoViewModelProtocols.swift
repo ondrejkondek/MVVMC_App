@@ -11,3 +11,7 @@ import Foundation
 protocol InfoViewModelViewDelegate {
     func updateScreen()
 }
+
+protocol InfoViewViewModelCoordinatorDelegate {
+    func popToRoot()
+}

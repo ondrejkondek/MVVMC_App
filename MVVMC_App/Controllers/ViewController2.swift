@@ -8,7 +8,6 @@
 import UIKit
 
 class ViewController2: UIViewController {
-    var coordinator: TableVCCoordinator?
     // Delegate for testing and sending the info back to rootVC
     var infoViewDelegate: SendInfoViewDelegate?
 
@@ -44,8 +43,7 @@ class ViewController2: UIViewController {
     }
 
     @IBAction func save(_: Any) {
-//        viewModel.status.about = statusText.text
-        coordinator?.changedStatusText()
+        viewModel.saveNewInfo()
         infoViewDelegate?.changeDescription(info: statusText.text)
     }
 }
